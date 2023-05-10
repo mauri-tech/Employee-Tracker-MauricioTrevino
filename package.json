@@ -1,0 +1,25 @@
+{
+  "name": "employee-tracker-mauriciotrevino",
+  "version": "1.0.0",
+  "description": "A Node.js application for managing employee data",
+  "main": "employeeTracker.js",
+  "scripts": {
+    "start": "node employeeTracker.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauri-tech/Employee-Tracker-MauricioTrevino.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauri-tech/Employee-Tracker-MauricioTrevino/issues"
+  },
+  "homepage": "https://github.com/mauri-tech/Employee-Tracker-MauricioTrevino#readme",
+  "dependencies": {
+    "figlet": "^1.6.0",
+    "inquirer": "^8.2.4",
+    "mysql": "^2.18.1"
+  }
+}
