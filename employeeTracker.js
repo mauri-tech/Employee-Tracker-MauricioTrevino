@@ -4,6 +4,18 @@ const inquirer = require("inquirer");
 const consoleTable = require("console.table");
 const figlet = require("figlet");
 
+// Defining function to display application header
+const displayEmployeeTrackerHeader = () => {
+  figlet("EMPLOYEE TRACKER!!", (err, data) => {
+    if (err) {
+      console.log("Something went wrong...");
+      console.dir(err);
+      return;
+    }
+    console.log(data);
+  });
+};
+
 // Displaying application header
 displayEmployeeTrackerHeader();
 
@@ -20,18 +32,6 @@ connection.connect((err) => {
   if (err) throw err;
   startApp();
 });
-
-// Defining function to display application header
-const displayEmployeeTrackerHeader = () => {
-  figlet("EMPLOYEE TRACKER!!", (err, data) => {
-    if (err) {
-      console.log("Something went wrong...");
-      console.dir(err);
-      return;
-    }
-    console.log(data);
-  });
-};
 
 // Defining the main function that runs the application
 const startApp = async () => {
@@ -110,4 +110,3 @@ const viewAllEmployees = async () => {
 
 // Starting the application
 startApp();
-
